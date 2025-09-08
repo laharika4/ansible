@@ -1,6 +1,7 @@
-- name: pingingip
+---
+- name: Pinging IPs
   hosts: web
-  task:
-  - name : ping the server
-    ansible.builtin.ping:
-           
+  become: true
+  tasks:
+    - name: Ping the host
+      ansible.builtin.ping:
