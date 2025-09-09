@@ -9,6 +9,6 @@
    - name: if number greater than {{ number1 }}
      ansible.builtin.debug:
       msg: "prompt {{ number1 }} is grater than {{ number2 }} "
-      when: number1 > number2
+  when: number1 > number2
 
     
