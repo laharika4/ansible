@@ -1,8 +1,8 @@
 - name: localhost usage
   hosts: local
   connection: local
-  vars:
-   ips.ini
+  vars_files:
+   - ips.ini
   tasks:
     - name: local usage
       absible.builtin.debug:
