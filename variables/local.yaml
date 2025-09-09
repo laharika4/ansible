@@ -1,7 +1,9 @@
 - name: localhost usage
   hosts: local
   connection: local
+  vars:
+   ips.ini
   tasks:
-    - name: localhost usage
+    - name: local usage
       absible.builtin.debug:
       msg : "using local host configurations"
