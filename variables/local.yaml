@@ -1,0 +1,7 @@
+- name: localhost usage
+  hosts: local
+  connection: local
+  tasks:
+   - name: localhost usage
+     absible.builtin.debug:
+     msg : "using local host configurations"
