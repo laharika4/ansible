@@ -1,5 +1,5 @@
 - name: inventoryvars
-  #hosts: local
+  hosts: web
   #connection: local
   tasks:
     - name: inventoryvars
