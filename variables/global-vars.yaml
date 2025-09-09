@@ -6,4 +6,4 @@
   tasks:
    - name: globalvars usage
      ansible.builtin.debug:
-     msg : "using global variables for {{ course} which has some duration of around {{ duration}}}"  
+     msg : "using global variables for {{ course }} which has some duration of around {{ duration }}"  
