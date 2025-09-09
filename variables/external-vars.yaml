@@ -6,7 +6,4 @@
     - name: externalvars
       ansible.builtin.debug:
         msg: "using external vars in the {{ course }} which has duration of {{ duration }}"
-    - name: show all variables
-      ansible.builtin.debug:
-        var: vars
 
