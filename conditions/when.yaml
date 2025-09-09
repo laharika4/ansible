@@ -1,0 +1,14 @@
+- name: using when condition
+  hosts: web
+  vars_prompt:
+     - name: number1
+       prompt: please enter a numebr to compare
+     - name: number2
+       prompt: please enter number to cross compare
+  tasks:
+   - name: if number greater than {{ number1 }}
+     ansible.builtin.debug:
+      msg: "prompt {{ number1 }} is grater than {{ number2 }} "
+      when: number1 > number2
+
+    
