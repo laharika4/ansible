@@ -1,14 +1,14 @@
 - name: alldatatypes
   hosts: web
-  vars:
-    course_name: " devops"
-    duration: 120
-    topic:
+  vars:                 # var is also a map/ dictnory datatype
+    course_name: " devops" # sting 
+    duration: 120        # number
+    topic:    # topic is list data type list always start with "-"
      - linux
      - shell-scripting
      - ansible
      - aws
-  tools:
+    tools:    # tools are maps/dictnory datatype
      ci: jenkins
      cloud: aws
      containerization: docker
