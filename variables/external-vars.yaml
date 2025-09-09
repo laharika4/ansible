@@ -1,7 +1,7 @@
 - name: external variables
   hosts: web
   vars_files:
-   - commons.yaml
+   - common-vars.yaml
   tasks:
     - name: externalvars
       ansible.builtin.debug:
