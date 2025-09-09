@@ -13,4 +13,4 @@
         course: "ansible"
         duration: "10 hrs"
       ansible.builtin.debug:
-         message: "using task variables in {{ course }} jich has duration of {{ duration }}" 
+         msg: "using task variables in {{ course }} jich has duration of {{ duration }}" 
