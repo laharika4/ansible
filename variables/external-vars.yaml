@@ -9,3 +9,4 @@
     - name: show all variables
       ansible.builtin.debug:
         var: vars
+
