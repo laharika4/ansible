@@ -4,4 +4,4 @@
   tasks:
    - name: localhost usage
      absible.builtin.debug:
-     msg : "using local host configurations"
+      msg : "using local host configurations"
