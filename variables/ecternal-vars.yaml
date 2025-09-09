@@ -1,0 +1,8 @@
+- name: external variables
+  hosts: web
+  vars:
+    - commons.yaml
+  tasks:
+    - name: externalvars
+      ansible.builtin.debug:
+        msg: "using external vars in the {{ course }} which has duration of {{ duration }}"
