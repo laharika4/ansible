@@ -1,0 +1,6 @@
+- name: inventoryvars
+  hosts: web
+  tasks:
+    - name: inventoryvars
+      ansible.builtin.debug:
+        msg: "using inventory vars in {{ course }} whcih has duration of {{ duration }}"
