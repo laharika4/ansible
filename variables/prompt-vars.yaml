@@ -1,0 +1,11 @@
+- name: promptvars
+  hosts: web
+  var_prompt:
+    - name: course
+      prompt: please enter your course
+    - name: duration
+      prompt: please enter duration
+  tasks:
+    - name: promptvars usage
+      ansible.builtin.debug:
+        msg: "using propt variables fort he {{ course }} which has duration of {{ duration }}"
