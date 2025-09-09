@@ -15,4 +15,4 @@
   tasks:
     - name: all types of variables
       ansible.builtin.debug:
-        msg: "this is all data types class for course : {{ course_name }} which has duration of {{ duration }} includes topics {{ topics }} using tools: {{ tools }} "
+        msg: "this is all data types class for course : {{ course_name }} which has duration of {{ duration }} includes topics {{ topic }} using tools: {{ tools }} "
