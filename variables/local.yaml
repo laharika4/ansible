@@ -5,4 +5,4 @@
   tasks:
     - name: local usage
       ansible.builtin.debug:
-      msg : "using local host configurations"
+       msg : "using local host configurations"
