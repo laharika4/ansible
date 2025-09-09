@@ -1,0 +1,9 @@
+- name: globalvars
+  hosts: web
+  vars:
+   course: "devops"
+   duration: "120 hrs"
+  tasks:
+   - name: globalvars usage
+     ansible.builtin.debug:
+     msg : "using global variables for {{course} which has some duration of around {{duration}}}"  
