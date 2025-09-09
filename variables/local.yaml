@@ -1,9 +1,8 @@
 - name: localhost usage
   hosts: local
   connection: local
-  vars_files:
-   - ips.ini
+
   tasks:
     - name: local usage
-      absible.builtin.debug:
+      ansible.builtin.debug:
       msg : "using local host configurations"
