@@ -6,9 +6,8 @@
         msg: "heloo {{ world  | default('myworld') }}"
     
     - block: 
-       name: convertinstring tolist
-       ansible.builtin.debug:
-       msg: "fruits are: {{ fruits | split(' , ') }}"
+        - name: convertinstring tolist
+          ansible.builtin.debug:
+          msg: "fruits are: {{ fruits | split(' , ') }}"
       vars:
         fruits: "apple , mango , kiwi"
-        
