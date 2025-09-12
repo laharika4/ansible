@@ -28,4 +28,4 @@
         course:
            {'key': 'sub', 'value': 'devops'}
            {'key': 'duration', 'value': '120 hrs'}
-           {'key': 'topics', 'value': 'aws,ansible,shell'}]
+           {'key': 'topics', 'value': 'aws,ansible,shell'}
