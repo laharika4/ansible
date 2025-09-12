@@ -1,9 +1,9 @@
 - name: hello using loops
   hosts: web
   tasks:
-   - name: pring hello msg
+   - name: print hello msg
      ansible.builtin.debug:
-      msg: " hello {{ item }}"
+       msg:  " hello {{ item }}"
      loop:
       - devops
       - aws
