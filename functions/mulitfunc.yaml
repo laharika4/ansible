@@ -26,6 +26,6 @@
           msg: " list from the dict as : {{ course | items2dict }}"
       vars:
         course:
-           {'key': 'sub', 'value': 'devops'}
-           {'key': 'duration', 'value': '120 hrs'}
-           {'key': 'topics', 'value': 'aws,ansible,shell'}
+           - {'key': 'sub', 'value': 'devops'}
+           - {'key': 'duration', 'value': '120 hrs'}
+           - {'key': 'topics', 'value': 'aws,ansible,shell'}
