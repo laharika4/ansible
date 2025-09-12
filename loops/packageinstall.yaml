@@ -5,7 +5,6 @@
       ansible.builtin.package:
        - name: "{{ item }}"
          state: installed
-         enabled: yes
       loop:
       - mysql
       - gcc
