@@ -15,7 +15,7 @@
       community.mysql.mysql_info:
        login_user: root
        login_password: ExpenseApp@1
-       login-host: 172.31.29.227
+       login-hosts: 172.31.29.227
        register: "{{ mysql_info }}"
        ignore-errors: yes
     - name: printing info
