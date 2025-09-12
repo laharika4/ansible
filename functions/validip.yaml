@@ -2,5 +2,7 @@
   hosts: web
   vars:
     ip: 54.167.125.237
-  ansible.builtin.debug:
-    msg: "The IP {{ ip }} is valid: {{ (ip | ansible.utils.ipaddr('address')) is not none }}"
+  tasks:
+   - name: ipvalidation
+     ansible.builtin.debug:
+    msg: "The IP {{ ip }} is valid: {{ (ip | ansible.utils.ipaddr) is not none }}"
