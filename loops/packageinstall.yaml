@@ -1,5 +1,6 @@
 - name: packageinstallation
   hosts: web
+  become: yes
   tasks:
    - name: installing various packages 
      ansible.builtin.package:
