@@ -1,12 +1,12 @@
 - name: packageinstallation
   hosts: web
   tasks:
-   - name: installing various packages 
-     ansible.builtin.package:
-     - name: "{{ item }}"
-       state: installed
-       enabled: yes
-     loop:
+    - name: installing various packages 
+      ansible.builtin.package:
+       - name: "{{ item }}"
+         state: installed
+         enabled: yes
+      loop:
       - mysql
       - gcc
       - nginx
