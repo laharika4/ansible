@@ -1,0 +1,10 @@
+- name: hello using loops
+  hosts: web
+  tasks:
+   - name: pring hello msg
+     ansible.builtin.debug:
+      msg: " hello {{ item }}"
+     loops:
+      - devops
+      - aws
+      - ansible
