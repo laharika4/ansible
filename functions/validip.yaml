@@ -3,9 +3,6 @@
   vars:
     ip: 54.167.125.237
   tasks:
-   - name: ipvalidation
-     ansible.builtin.debug:
-      msg: "The IP {{ ip }} is valid: {{ ip | ansible.utils.ipaddr  }}"
    - name: install pip
      ansible.builtin.package:
        name: python3-pip
@@ -14,3 +11,6 @@
      ansible.builtin.pip:
         name: netaddr
         executable: pip3
+   - name: ipvalidation
+     ansible.builtin.debug:
+      msg: "The IP {{ ip }} is valid: {{ ip | ansible.utils.ipaddr  }}"
