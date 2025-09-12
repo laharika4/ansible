@@ -4,3 +4,8 @@
     - name: defaultmethod
       ansible.builtin.debug:
         msg: "heloo {{ world  | default('myworld') }}"
+    - name: converting string to list
+      ansible.builtin.debug:
+        vars:
+          fruits: "apple,mango,kiwi"
+      msg: "fruits are: {{ fruits | split(',') }}"
