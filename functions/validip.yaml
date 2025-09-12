@@ -1,0 +1,5 @@
+- name: checkingvaild ip
+  vars:
+    ip: 54.167.125.237
+  ansible.builtin.debug:
+    msg: " is {{ ip }} valid {{ ip | ansible.utils.ipaddr }}" 
