@@ -1,4 +1,5 @@
 - name: checkingvaild ip
+  hosts: web
   vars:
     ip: 54.167.125.237
   ansible.builtin.debug:
