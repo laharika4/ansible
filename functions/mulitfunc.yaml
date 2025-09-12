@@ -5,7 +5,7 @@
       ansible.builtin.debug:
         msg: "heloo {{ world  | default('myworld') }}"
     
-    - name: converting string to list
+    - name: convertinstring tolist
       ansible.builtin.debug:
         vars:
           fruits: "apple , mango , kiwi"
