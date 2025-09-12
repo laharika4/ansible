@@ -5,4 +5,4 @@
   tasks:
    - name: ipvalidation
      ansible.builtin.debug:
-    msg: "The IP {{ ip }} is valid: {{ (ip | ansible.utils.ipaddr) is not none }}"
+      msg: "The IP {{ ip }} is valid: {{ ip | ansible.utils.ipaddr  }}"
