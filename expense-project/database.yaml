@@ -12,15 +12,15 @@
         state: started
         enabled: yes
     - name: configuring the userdetails
-      community.mysql.mysql-info:
+      community.mysql.mysql_info:
        login_user: root
        login_password: ExpenseApp@1
        login-host: 172.31.29.227
-       register: "{{ mysql-info }}"
+       register: "{{ mysql_info }}"
        ignore-errors: yes
     - name: printing info
       ansible.builtin.debug:
-        msg: " {{ mysql-info }}"
+        msg: " {{ mysql_info }}"
     - name: setup the db password 
       ansible.builtincommand: "mysql_secure_installation --set-root-pass ExpenseApp@1 "
-      when: mysql-info failed is true
+      when: mysql_info failed is true
