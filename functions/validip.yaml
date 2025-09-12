@@ -3,4 +3,4 @@
   vars:
     ip: 54.167.125.237
   ansible.builtin.debug:
-    msg: " is {{ ip }} valid {{ ip | ansible.utils.ipaddr }}" 
+    msg: "The IP {{ ip }} is valid: {{ (ip | ansible.utils.ipaddr('address')) is not none }}"
