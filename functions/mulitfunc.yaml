@@ -46,11 +46,11 @@
          ansible.builtin.debug:
            msg: " max from the list {{ course | 'max' }}"
       vars:
-        course: "[10,20,30,40,50]"
+        course: [10,20,30,40,50]
     - block:
       - name: minvalues
         ansible.builtin.debug:
           msg: " min from the list {{ course | 'min' }}"
       vars:
-        course: "[10,20,30,40,50]"
+        course: [10,20,30,40,50]
       
