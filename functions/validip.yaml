@@ -1,5 +1,6 @@
 - name: checkingvaild ip
   hosts: web
+  become: yes
   vars:
     ip: 54.167.125.237
   tasks:
