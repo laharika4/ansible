@@ -4,7 +4,7 @@
    - name: pring hello msg
      ansible.builtin.debug:
       msg: " hello {{ item }}"
-     loops:
+     loop:
       - devops
       - aws
       - ansible
