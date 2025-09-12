@@ -6,3 +6,10 @@
    - name: ipvalidation
      ansible.builtin.debug:
       msg: "The IP {{ ip }} is valid: {{ ip | ansible.utils.ipaddr  }}"
+   - name: install pip
+     ansible.builtin.package:
+       name: python3-pip
+       state: present
+   - name: install netaddresspac
+     ansible.builtin.pip:
+        name: netaddr
