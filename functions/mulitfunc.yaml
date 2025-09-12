@@ -14,7 +14,7 @@
     - block:
         - name: map to list
           ansible.builtin.debug:
-            msg: " list from the dict as : {{ course | dict2item }}"
+            msg: " list from the dict as : {{ course | dict2items}}"
       vars:
         course:
            sub: "devops"
