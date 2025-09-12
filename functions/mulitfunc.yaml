@@ -1,0 +1,6 @@
+- name: use of multiple functioncases
+  hosts: web
+  tasks:
+    - name: defaultmethod
+      ansible.builtin.debug:
+        msg: "heloo {{ world  | default('myworld') }}"
