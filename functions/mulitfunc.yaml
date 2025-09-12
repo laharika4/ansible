@@ -20,3 +20,12 @@
            sub: "devops"
            duration: "120 hrs"
            topics: "aws,ansible,shell"
+    - block:
+      - name: map to list
+        ansible.builtin.debug:
+          msg: " list from the dict as : {{ course | items2dict }}"
+      vars:
+        course:
+           {'key': 'sub', 'value': 'devops'}
+           {'key': 'duration', 'value': '120 hrs'}
+           {'key': 'topics', 'value': 'aws,ansible,shell'}]
