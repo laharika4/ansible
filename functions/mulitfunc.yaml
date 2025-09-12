@@ -29,3 +29,28 @@
            - {'key': 'sub', 'value': 'devops'}
            - {'key': 'duration', 'value': '120 hrs'}
            - {'key': 'topics', 'value': 'aws,ansible,shell'}
+    - block:
+       - name: loewcasestring
+         ansible.builtin.debug:
+           msg: " sting converting to loewrcase {{ course | lower }}"
+      vars:
+        course: "you are about to enter into new world"
+    - block:
+       - name: uppercaser
+         ansible.builtin.debug:
+           msg: " sting converting to loewrcase {{ course | upper }}"
+      vars:
+        course: "you are about to enter into new world"
+    - block:
+       - name: maxvalues
+         ansible.builtin.debug:
+           msg: " max from the list {{ course | 'max' }}"
+      vars:
+        course: "[10,20,30,40,50]"
+    - block:
+      - name: minvalues
+        ansible.builtin.debug:
+          msg: " min from the list {{ course | 'min' }}"
+      vars:
+        course: "[10,20,30,40,50]"
+      
