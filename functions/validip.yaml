@@ -3,6 +3,7 @@
   become: yes
   vars:
     ip: 54.167.125.237
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
    - name: install pip
      ansible.builtin.package:
