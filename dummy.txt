@@ -1,0 +1,20 @@
+database:
+
+18.205.22.214 | open address 
+Private IPv4 addresses
+172.31.20.127
+
+frontend
+Public IPv4 address
+
+54.160.205.194 | open address 
+Private IPv4 addresses
+172.31.20.10
+
+
+backend
+Public IPv4 address
+
+18.207.118.76 | open address 
+Private IPv4 addresses
+172.31.18.43
